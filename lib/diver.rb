@@ -12,4 +12,14 @@ class Hash
       self
     end
   end
+
+  def diveSet(*args)
+    args_list = args.flatten
+    return self if args_list.length == 0 || args_list[0] == "" || args_list.length == 1
+    key = args_list.shift
+    return self[key] = args_list[0] if args_list.length == 1
+    self[key] = {} unless self.has_key?(key)
+    self[key].diveSet(args_list)
+  end
+
 end

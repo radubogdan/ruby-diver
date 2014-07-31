@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Radu-Bogdan Croitoru"]
   spec.email         = ["croitoruradubogdan@gmail.com"]
   spec.summary       = %q{Simple, ad-hoc access to elements of deeply nested structures}
-  spec.description   = %q{}
+  spec.description   = %q{Implement new methods in Hash class for ad-hoc access to elements of deeply nested data structures}
   spec.homepage      = "https://github.com/radubogdan/ruby-diver.git"
   spec.license       = "MIT"
 
